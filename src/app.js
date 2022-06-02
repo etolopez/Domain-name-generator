@@ -1,11 +1,16 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronoun = ["the", "our"];
+let adj = ["great", "big"];
+let noun = ["jogger", "racoon"];
+//let domain = [".com", ".net", ".us", ".io"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+function domainGenerator() {
+  for (let adjs of adj) {
+    for (let pron of pronoun) {
+      for (let nou of noun) {
+        console.log("" + pron + adjs + nou + ".com");
+      }
+    }
+  }
+}
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+domainGenerator();
